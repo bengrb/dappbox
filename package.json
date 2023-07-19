@@ -1,0 +1,84 @@
+{
+	"name": "dapp-box",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@dfinity/agent": "^0.13.1",
+		"@dfinity/auth-client": "^0.13.1",
+		"@dfinity/authentication": "^0.13.1",
+		"@dfinity/candid": "^0.13.1",
+		"@dfinity/identity": "^0.13.1",
+		"@dfinity/principal": "^0.13.1",
+		"@emotion/react": "^11.10.5",
+		"@emotion/styled": "^11.10.5",
+		"@hookform/resolvers": "^2.9.10",
+		"@microsoft/mgt-react": "^2.10.0",
+		"@mui/icons-material": "^5.10.15",
+		"@mui/material": "^5.10.15",
+		"@mui/utils": "^5.10.15",
+		"@mui/x-data-grid": "^5.17.17",
+		"@tanstack/react-query": "^4.18.0",
+		"date-fns": "^2.29.3",
+		"jszip": "^3.10.1",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-dropzone": "^14.2.3",
+		"react-error-boundary": "^3.1.4",
+		"react-helmet-async": "^1.3.0",
+		"react-hook-form": "^7.39.5",
+		"react-query": "^3.39.3",
+		"react-router-dom": "^6.4.3",
+		"recoil": "^0.7.6",
+		"vite": "^4.2.1",
+		"web-vitals": "^2.1.2",
+		"xlsx": "^0.18.5",
+		"zod": "^3.11.6"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"sync": "bash scripts/sync_declarations.sh",
+		"deploy": "dfx deploy --network ic frontend",
+		"format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\" --ignore-path .prettierignore"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@rollup/plugin-inject": "^5.0.3",
+		"@testing-library/jest-dom": "^5.16.5",
+		"@testing-library/react": "^13.4.0",
+		"@testing-library/user-event": "^14.4.3",
+		"@types/dropzone": "^5.7.4",
+		"@types/jest": "^29.2.3",
+		"@types/node": "^18.11.9",
+		"@types/react": "^18.0.25",
+		"@types/react-dom": "^18.0.9",
+		"@vitejs/plugin-react-swc": "^3.2.0",
+		"buffer": "^6.0.3",
+		"prettier": "^2.8.7",
+		"terser-webpack-plugin": "^5.3.6",
+		"typescript": "^4.9.3"
+	},
+	"resolutions": {
+		"@esbuild/darwin-x64": "npm:@esbuild/darwin-arm64",
+		"@esbuild/linux-x64": "npm:@esbuild/darwin-arm64",
+		"@esbuild/windows-x64": "npm:@esbuild/darwin-arm64"
+	}
+}
